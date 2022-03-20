@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Outlet } from "react-router-dom";
 
 const Container = styled.section`
     padding: 0 2rem;
@@ -48,13 +49,13 @@ const Footer = styled.footer`
     font-size: 20px;
 `
 
-const AppLayout = ({ children }) => {
+const AppLayout = () => {
     return (
             <Container>
                 <Title>💣find mines💥</Title>
                 <Main>
                     <Grid>
-                        {children}
+                        <Outlet />
                     </Grid>
                 </Main>
                 <Footer>Developer: Luisana Henmary Perez Cardenas.</Footer>
