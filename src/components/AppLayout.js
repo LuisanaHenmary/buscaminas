@@ -40,15 +40,6 @@ const Title = styled.h1`
     text-align:center;
 `
 
-const Footer = styled.footer`
-    display: flex;
-    padding: 2rem 0;
-    justify-content: center;
-    align-items: center;
-    color: rgb(199, 199, 199);
-    font-size: 20px;
-`
-
 const AppLayout = () => {
     return (
             <Container>
@@ -58,7 +49,6 @@ const AppLayout = () => {
                         <Outlet />
                     </Grid>
                 </Main>
-                <Footer>Developer: Luisana Henmary Perez Cardenas.</Footer>
             </Container>
     )
 
