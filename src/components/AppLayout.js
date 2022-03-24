@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom"
 
 const Container = styled.section`
     padding: 0 2rem;

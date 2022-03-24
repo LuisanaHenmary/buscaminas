@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Panel = styled.div`
     padding:5px;
@@ -12,24 +12,25 @@ const Panel = styled.div`
         margin:10px;
         cursor:pointer;
         border: 1px solid black;
+        padding: 5px;
     }
 `
 
-const PanelControl = ({ markEvent, revealEvent,panelState }) => {
+const PanelControl = ({ markEvent, revealEvent, panelState }) => {
     return (
         <Panel>
             <button
                 onClick={() => markEvent()}
-                disabled={panelState.markButtonState}
+                disabled={panelState.markButtonDisabled}
 
             >
-                mark
+                Check
             </button>
             <button
                 onClick={() => revealEvent()}
-                disabled={panelState.revealButtonState}
+                disabled={panelState.revealButtonDisabled}
             >
-                reveal
+                Reveal
             </button>
         </Panel>
     )

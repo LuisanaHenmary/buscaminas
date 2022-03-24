@@ -1,10 +1,16 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import BoardGame from "./BoardGame"
+import {  useSelector } from "react-redux"
+
 
 const Game = () => {
+
+    const state = useSelector(state => state)
+    const {panel, board} = state
+
     return (
         <>
-            <p>coming soon the board game</p>
+            <BoardGame board={board} panel={panel} />
             <Link to="/" >Home</Link>
         </>
     )
