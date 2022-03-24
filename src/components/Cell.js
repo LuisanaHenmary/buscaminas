@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Cell = styled.button`
     background-color:white;
-    color: ${props=>  props.isUsed?'white':'black'};
+    color: ${props=>  !props.isUsed?'white':'black'};
     border: 1px solid black;
     width:40px;
     height:40px;
